@@ -5,7 +5,11 @@ import routes from './routes/routes';
 import Home from './components/frontend/Home';
 import Login from './components/frontend/auth/Login';
 import Register from './components/frontend/auth/Register';
+import axios from 'axios';
+axios.defaults.baseURL = "http://localhost:8000/";
+
 function App() {
+ 
   return (
     <div className="App">
     <Router>
